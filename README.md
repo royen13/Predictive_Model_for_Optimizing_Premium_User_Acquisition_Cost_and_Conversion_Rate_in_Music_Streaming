@@ -41,18 +41,12 @@ The solution process involved building a predictive model using R, which include
 
 1. Data Processing: Cleaning and preprocessing the data for use in the model.
 
-2. Model Selection: Exploring various machine learning algorithms, including Decision Tree, k-NN, Naïve Bayes, Random Forest, and Logistic Regression. We used AUC score to evaluate model performance and selected the Decision Tree model due to its interpretability, simplicity, and efficiency.
+2. Model Selection: Exploring various machine learning algorithms, including Decision Tree, k-NN, Naïve Bayes, Random Forest, and Logistic Regression. We used AUC score to evaluate model performance and selected the Decision Tree model due to its interpretability, simplicity, and efficiency. AUC score measures how well the model distinguishes between users who are likely to upgrade and those who are not.
 
 3. Feature Selection: Using Filter Approach and Forward Selection to identify the most predictive features. We found that the top two features—"lovedTracks" and "delta_songsListened"—were the most informative.
 
-4. Model Finalization: We built the final Decision Tree model using only the top two features to balance performance and complexity.
-
-* Model Evaluation
-  * To evaluate the model, we used AUC score, which measures how well the model distinguishes between users who are likely to upgrade and those who are not.
-
-* Final Model
-  * After considering performance and simplicity, the final model is a Decision Tree trained on the top two features:
-
+4. Model Finalization: After considering performance and simplicity, the final model is a Decision Tree trained on the top two features to balance performance and complexity:
+  
   * lovedTracks: The total number of different songs the user liked.
 
   * delta_songsListened: The change in the number of songs a user listened to over the 3-month period before the campaign.
