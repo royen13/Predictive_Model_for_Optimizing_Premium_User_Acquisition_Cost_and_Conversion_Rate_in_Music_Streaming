@@ -36,7 +36,7 @@ The dataset used in this project is XYZData.csv, which contains 41,540 records o
 And several other features related to changes in user behavior (e.g., delta friend count, delta songs listened).
 
 
-### Solution Implementation
+### Analysis Steps
 The solution process involved building a predictive model using R, which includes the following steps:
 
 1. Data Processing: Cleaning and preprocessing the data for use in the model.
